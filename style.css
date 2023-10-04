@@ -1,0 +1,164 @@
+@font-face {
+    font-family: LeagueSpartan;
+    src: url(/LeagueSpartan/LeagueSpartan-VariableFont_wght.ttf)
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: LeagueSpartan;
+    font-size: 32px;
+    font-weight: 700;
+    background-color: #3B4664;
+    color: white;
+}
+
+p {
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.calc {
+    font-size: 25px;
+}
+
+.theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+}
+
+.number {
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    padding-right: 10px;
+
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60px;
+    height: 20px;
+    background-color: #262D44;
+    border-radius: 10px;
+    margin-bottom: 28px;
+}
+
+.switch-theme {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #D13F30;
+    margin-right: 35px;
+
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+}
+
+.calculatrice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 700px;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 90px;
+    width: 500px;
+    background-color: #171F33;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+}
+
+.touche {
+    height: 65%;
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: repeat(5, 80px);
+    background-color: #262D44;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+
+button {
+    border-radius: 10px;
+    width: 90px;
+    height: 55px;
+    border: none;
+    color: #4A4E60;
+    font-weight: 700;
+    font-size: 32px;
+    background-color: #EBE2DB;
+    border-bottom: 3px solid #B4A599;
+}
+
+.reset-egal {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.reset {
+    width: 210px;
+    background-color: #647399;
+    color: white;
+    border-bottom: 3px solid #414E71;
+}
+
+.del {
+    background-color: #647399;
+    color: white;
+    border-bottom: 3px solid #414E71;
+
+}
+
+.egal {
+    width: 210px;
+    background-color: #D13F30;
+    color: white;
+    border-bottom: 3px solid #90261C;
+}
+
+
+.reset:hover,
+.del:hover {
+    background-color: #A0B3E3;
+}
+
+.egal:hover,
+.switch-theme:hover {
+    background-color: #F96D5B;
+}
+
+button:hover {
+    background-color: white;
+}
