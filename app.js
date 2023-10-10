@@ -8,6 +8,10 @@ document.addEventListener('keydown', (e) => {
     calculer(valeur)
 })
 
+const keycodes =
+{
+    backspace: '8',
+}
 
 document.addEventListener('click', (e) => {
     const valeur = e.target.dataset.key;
@@ -23,6 +27,9 @@ const calculer = (valeur) => {
             case '187':
                 const calcul = eval(ecran.textContent);
                 ecran.textContent = calcul;
+                break;
+            case keycodes.backspace:
+                ecran.textContent = ecran.textContent.slice(0, ecran.textContent.length - 1);
                 break;
             default:
                 const indexKeycode = listeKeycode.indexOf(valeur);
